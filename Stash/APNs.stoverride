@@ -4,7 +4,7 @@ proxy-groups:
     url: 'http://captive.apple.com/hotspot-detect.html'
     interval: 300
     proxies:
-      - Outside
+      - Proxy
       - DIRECT
 
 rule-providers:
