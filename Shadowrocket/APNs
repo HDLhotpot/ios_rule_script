@@ -1,0 +1,8 @@
+#!name=APNs
+#!desc=防止节点挂了收不到通知
+
+[Proxy Group]
+APNs = fallback, PROXY, DIRECT, url=http://captive.apple.com/hotspot-detect.html, timeout=3
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/loon/apns.list,APNs
