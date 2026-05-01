@@ -1,0 +1,8 @@
+#!name=APNs
+#!desc=苹果推送代理+兜底直连
+
+[Proxy Group]
+APNs = fallback, Outside, DIRECT, url=http://captive.apple.com/hotspot-detect.html, interval=600
+
+[Remote Rule]
+https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/loon/apns.list, policy=APNs, tag=苹果推送兜底规则
