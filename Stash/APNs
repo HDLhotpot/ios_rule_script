@@ -1,0 +1,18 @@
+proxy-groups:
+  - name: "APNs"
+    type: fallback
+    url: 'http://captive.apple.com/hotspot-detect.html'
+    interval: 300
+    proxies:
+      - Outside
+      - DIRECT
+
+rule-providers:
+  apple-push:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/loon/apns.list"
+    interval: 86400
+
+rules:
+  - RULE-SET,apple-push,APNs
