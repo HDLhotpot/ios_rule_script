@@ -1,4 +1,5 @@
 name: APNs
+
 proxy-groups:
   - name: "APNs"
     type: fallback
