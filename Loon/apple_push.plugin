@@ -1,0 +1,19 @@
+#!name=Apple Push 分流（可控）
+#!desc=Apple 推送服务分流，可手动选择直连或代理
+#!author=ChatGPT
+
+[Rule]
+DOMAIN-SUFFIX,push.apple.com,Apple Push
+DOMAIN-SUFFIX,push-apple.com.akadns.net,Apple Push
+DOMAIN-KEYWORD,apple.com.edgekey.net,Apple Push
+
+IP-CIDR,17.249.0.0/16,Apple Push,no-resolve
+IP-CIDR,17.252.0.0/16,Apple Push,no-resolve
+IP-CIDR,17.57.144.0/22,Apple Push,no-resolve
+IP-CIDR,17.188.128.0/18,Apple Push,no-resolve
+IP-CIDR,17.188.20.0/23,Apple Push,no-resolve
+
+IP-CIDR6,2620:149:a44::/48,Apple Push,no-resolve
+IP-CIDR6,2403:300:a42::/48,Apple Push,no-resolve
+IP-CIDR6,2403:300:a51::/48,Apple Push,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,Apple Push,no-resolve
