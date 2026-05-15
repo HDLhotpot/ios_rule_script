@@ -1,5 +1,5 @@
 #!name=Apple Push 分流
-#!desc=Apple 推送服务直连
+#!desc=Apple 推送服务代理
 #!author=ChatGPT
 
 [Rule]
